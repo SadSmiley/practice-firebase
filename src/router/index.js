@@ -22,12 +22,12 @@ export default new Router({
     {
       path: '/edit/:employee_id',
       name: 'edit-employee',
-      component: Dashboard
+      component: EditEmployee
     },
     {
-      path: '/',
-      name: 'dashboard',
-      component: Dashboard
+      path: '/:employee_id',
+      name: 'view-employee',
+      component: ViewEmployee
     },
   ]
 })
